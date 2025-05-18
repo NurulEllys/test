@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <title>Portfolio | My Digital CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/icon-152x152.png">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="app-shell">
+        <header>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/cvlogo.png" alt="Personal Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="skills.html">Skills & Experience</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+				<button class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="skills-hero">
+                <div class="skills-hero-content">
+                    <h1>My Portfolio</h1>
+                    <p class="subtitle">Showcasing my IT and administrative projects</p>
+                </div>
+            </section>
+
+            <section class="portfolio-filters">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="it">IT</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="data & coding">Data & Coding</button>
+                </div>
+            </section>
+
+            <section class="portfolio-grid">
+                <div class="portfolio-item" data-category="it">
+                    <div class="portfolio-image">
+                        <img src="images/project1.jpg" alt="Computer Hardware Assembly">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn view-btn" data-project="project1">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Computer Hardware Assembly</h3>
+                        <p>A hands-on experience in assembling key computer components like motherboard, processor, RAM and storage, aimed at building a fully functional desktop system.</p>
+                        <div class="portfolio-tags"><span>Hardware</span><span>Troubleshooting</span><span>System Setup</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="images/project2.jpg" alt="Menu Poster Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn view-btn" data-project="project2">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Menu Poster Design</h3>
+                        <p>A comprehensive graphic design project creating an elegant restaurant-style menu poster using digital illustration and typography techniques. Focused on color theory and layout design to enhance customer experience.</p>
+                        <div class="portfolio-tags"><span>Photoshop</span><span>Adobe Illustrator</span><span>Canva</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="it">
+                    <div class="portfolio-image">
+                        <img src="images/project3.jpg" alt="Arduino-Based Sensor Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn view-btn" data-project="project3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Arduino-Based Sensor Project</h3>
+                        <p>An electronics project using Arduino to interface with sensors for real-time data collection and automated response demonstrations.</p>
+                        <div class="portfolio-tags"><span>Arduino</span><span>Sensors</span><span>Prototyping</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="images/project4.png" alt="IBTE HNtec in IT Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn view-btn" data-project="project4">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>IBTE HNtec in IT Website</h3>
+                        <p>A responsive website built to represent the IBTE Higher National Technical Certificate in Information Technology program, featuring course details and IT student resources.</p>
+                        <div class="portfolio-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="data & coding">
+                    <div class="portfolio-image">
+                        <img src="images/project5.png" alt="Excel Data Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn view-btn" data-project="project5">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Excel Data Dashboard</h3>
+                        <p>An interactive data dashboard project that integrates Excel with a MySQL database hosted on XAMPP. Used for data visualization and reporting.</p>
+                        <div class="portfolio-tags"><span>MySQL Workbench</span><span>phpMyAdmin</span><span>Microsoft Access</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="data & coding">
+                    <div class="portfolio-image">
+                        <img src="images/project6.jpg" alt="Programming & Debugging Practice">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn view-btn" data-project="project6">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Programming & Debugging</h3>
+                        <p>Engaged in solving logic errors and refining code through debugging sessions using various programming environments.</p>
+                        <div class="portfolio-tags"><span>Coding</span><span>Debugging</span><span>Programming</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Modal -->
+            <div class="project-modal" id="projectModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="modal-body">
+                        <!-- Content will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="skills.html">Skills & Experience</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                       <a href="https://wa.link/prirvh" aria-label="WhatsApp" class="whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17.498 14.382c-.301-.15-1.767-.867-2.04-.966-.273-.101-.473-.15-.673.15-.2.301-.767.966-.94 1.164-.173.199-.347.223-.646.075-.3-.15-1.267-.465-2.414-1.485-.893-.795-1.494-1.78-1.67-2.079-.174-.3-.019-.462.13-.61.136-.137.301-.353.451-.53.15-.177.2-.301.3-.502.099-.2.05-.375-.025-.524-.075-.15-.672-1.62-.922-2.217-.24-.584-.487-.51-.672-.51-.172-.007-.371-.01-.571-.01-.2 0-.523.074-.797.375-.273.3-1.045 1.02-1.045 2.488s1.07 2.887 1.22 3.087c.15.2 2.11 3.223 5.114 4.524.714.31 1.27.494 1.704.632.714.227 1.365.195 1.88.118.574-.077 1.767-.72 2.016-1.413.247-.697.247-1.295.173-1.42-.075-.126-.276-.203-.575-.352z"/>
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.5 21.5l4.5-.838A9.955 9.955 0 0012 22z"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/Nurulellys" aria-label="Telegram" class="telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m22 2-7 20-4-9-9-4Z"/>
+                                <path d="M22 2 11 13"/>
+                            </svg>
+                        </a>
+                        <a href="https://m.me/Annonymous" aria-label="Messenger" class="messenger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a10 10 0 0 0-10 10c0 4.4 2.9 8.2 7 9.5V22l3.5-2a9.7 9.7 0 0 0 2.5.3c5.5 0 10-4.5 10-10S17.5 2 12 2z"/>
+                                <path d="M7 10l5 3 5-3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; All rights reserved. Designed by NurulEllys | ICT02/H/ITN/35</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
